@@ -38,7 +38,7 @@ dataset = load_dataset(dataset_name, split="the split you want to load")
 
 ```
 
-ensure you add the `max_seq_length` and `dataset_text_field` parameters indide the `SFTConfig` for supervised finetuning and `DPOConfig` for direct preference optimization.
+ensure you add the `max_seq_length` and `dataset_text_field` parameters indide the `SFTConfig` for supervised finetuning and `DPOConfig` for direct preference optimization not the `SFTTraner` or `DPOTrainer`. **`Updated note`**
 ```bash
 
 from trl import SFTConfig
