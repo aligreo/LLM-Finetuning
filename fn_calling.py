@@ -9,8 +9,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-os.environ["OPENROUTER_API_KEY"] = "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"
-
 api_key = os.getenv("OPENROUTER_API_KEY")
 
 
