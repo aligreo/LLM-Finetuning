@@ -25,6 +25,6 @@ from datasets import load_dataset
 
 dataset_name = "the name of the dataset on the hub"
 
-dataset = load_dataset(dataset_name, split="train")
+dataset = load_dataset(dataset_name, split="the split you want to load")
 
 ```
