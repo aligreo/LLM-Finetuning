@@ -13,3 +13,18 @@
 
 #### i finetuned most of the models with parameter efficent finetuning methods `PEFT`.
 #### `Peft`: lets you fine-tune large pre-trained models by adapting only a small portion of parameters, instead of retraining everything. this help on reducing costs and training time.
+
+
+#### to load any dataset used in these notebooks or any others from the huggingface hub you only need these four lines of code.
+
+
+```bash
+!pip install -U datasets 
+
+from datasets import load_dataset
+
+dataset_name = "the name of the dataset on the hub"
+
+dataset = load_dataset(dataset_name, split="train")
+
+```
