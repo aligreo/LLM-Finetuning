@@ -24,7 +24,7 @@ peft_config = LoraConfig(
     task_type="CAUSAL_LM"
 )
 ```
-#### to load any dataset used in these notebooks or any others from the huggingface hub you only need these four lines of code.
+**to load any dataset used in these notebooks or any others from the huggingface hub you only need these four lines of code.**
 
 
 ```bash
