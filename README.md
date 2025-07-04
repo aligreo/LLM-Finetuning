@@ -12,7 +12,7 @@ to run with out any errors ensure you have the latest versions of `Transformers`
 ```
 
 i finetuned most of the models with parameter efficent finetuning methods `PEFT`.
-**`Peft`**: lets you fine-tune large pre-trained models by adapting only a small portion of parameters, instead of retraining everything. this help on reducing costs and training time.
+**`Peft`**: lets you fine-tune large pre-trained models by adapting only a small portion of parameters, instead of retraining everything. this help on reducing costs and training time.<br>
 **`Low Rank Adapters`**: is a method works by injecting a trainable small low rank metrices withen the selected transformers layers. train far fewer parameters yet often matches full-finetune performance.
 ```bash
 peft_config = LoraConfig(
