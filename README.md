@@ -1,5 +1,5 @@
 # LLMs FineTuning
-**FineTune LLMs on different Datasets with Different Tasks using different techniques such as `supervised fintuning` `Proximal policy optimization`, `direct preference optimization` and `Group Relative plicy optimazation`.**
+**FineTune LLMs on different Datasets with Different Tasks using different techniques such as `supervised fintuning` `Proximal policy optimization`, `direct preference optimization` and `Group Relative plicy optimization`.**
 
 to run any of these models all you need to do is cloning the repo locally and just run the files.
 to run with out any errors ensure you have the latest versions of `Transformers` and `Unsloth` packages.
@@ -37,3 +37,14 @@ dataset_name = "the name of the dataset on the hub"
 dataset = load_dataset(dataset_name, split="the split you want to load")
 
 ```
+
+ensure you add the `max_seq_length` and `dataset_text_field` parameters indide the `SFTConfig` for supervised finetuning and `DPOConfig` for direct preference optimization.
+```bash
+
+from trl import SFTConfig
+args = SFTConfig(
+    max_seq_length = 1024,
+    dataset_text_field ='text'
+)
+```
+    
