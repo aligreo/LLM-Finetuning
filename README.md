@@ -6,6 +6,10 @@
 ```bash
 !pip install -U transformers -q
 !pip install -U unsloth -q
-
+!pip install -U peft -q
+!pip install -U trl -q
+!pip install -U bitsandbytes -q
 ```
 
+### i finetuned most of the models with parameter efficent finetuning methods `PEFT`.
+### `Peft`: lets you fine-tune large pre-trained models by adapting only a small portion of parameters, instead of retraining everything. this help on reducing costs and training time.
