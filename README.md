@@ -13,7 +13,6 @@
 
 #### i finetuned most of the models with parameter efficent finetuning methods `PEFT`.
 #### `Peft`: lets you fine-tune large pre-trained models by adapting only a small portion of parameters, instead of retraining everything. this help on reducing costs and training time.
-**the date**
 
 
 #### to load any dataset used in these notebooks or any others from the huggingface hub you only need these four lines of code.
